@@ -4,6 +4,38 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ---- MHSSCE reference palette (source of truth: mhssce.ac.in) ---- */
+@theme {
+  --font-sans: "Open Sans", Helvetica, Arial, sans-serif;
+  --color-topbar: #137a4b;
+  --color-navy: #1c345a;
+  --color-quote: #cae7f9;
+  --color-quote-text: #0d5c3a;
+  --color-ink: #000000;
+  --color-heading: #111111;
+  --color-rule: #dddddd;
+  --color-table-head: #f5f5f5;
+  --color-footer: #1c345a;
+  --color-footer-text: #d7dde8;
+  --color-footer-bottom: #06224e;
+  --color-notice: #ff0000;
+}
+
+@utility line-bottom-edu {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-topbar);
+  }
+}
+
 /*
  * Design system definition.
  *

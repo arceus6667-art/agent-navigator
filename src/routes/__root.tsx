@@ -78,21 +78,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "M.H. Saboo Siddik College Of Engineering" },
+      {
+        name: "description",
+        content:
+          "M.H. Saboo Siddik College of Engineering, Byculla, Mumbai — Anjuman-I-Islam's engineering institute.",
+      },
+      { property: "og:title", content: "M.H. Saboo Siddik College Of Engineering" },
+      {
+        property: "og:description",
+        content: "Anjuman-I-Islam's M.H. Saboo Siddik College of Engineering, Byculla, Mumbai.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+      },
+      {
+        rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
